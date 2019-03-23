@@ -1,0 +1,43 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#titleText {
+    font-size: 50px;
+    font-weight: bold;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+}
+
+#container {
+    width: 300px;
+    height: 100px;
+    padding-top: 200px;
+    margin-left: 800px;
+    border-radius: 10px;
+}
+
+#nameBox {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    font-size: 25px;
+    padding: 0 10px; 
+    border-radius: 9em;
+    font-family: monospace;
+    background: transparent;
+    caret-color: lightgray;
+    border: 3px solid lightgray;
+}
+
+#container p {
+    font-weight: bold;
+}
+
+#key {
+    padding: 0 2px;
+    border-radius: 2px;
+    background: rgb(223, 221, 221);
+}
