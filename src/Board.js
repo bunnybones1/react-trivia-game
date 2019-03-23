@@ -29,7 +29,8 @@ class Board extends Component {
             .catch((err) => {
                 console.log(err.message);
                 this.setState({
-                    error: err.message
+                    error: err.message,
+                    isLoading: false
                 })
             })
     }
