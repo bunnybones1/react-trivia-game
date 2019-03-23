@@ -1,0 +1,23 @@
+.board {
+    width: 1320px;
+    height: 340px;
+    background: gray;
+    padding-top: 300px;
+}
+
+.content {
+    width: 600px;
+    padding: 5px;
+    margin-left: 250px;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid lightgray;
+}
+
+#msg {
+    color: lightgray;
+}
+
+#msg span {
+    font-weight: bold;
+}
