@@ -39,7 +39,7 @@ class Board extends Component {
                 } else { 
                     this.setState({ id: 0 });
                     clearInterval(queCounter);
-                    history.push('/score', { score: `${this.state.score}` });                                     
+                    history.push('/score', { score: `${this.state.score}`, name: `${this.props.location.state.playerName}` });
                 }
             }
         }, 1000);
