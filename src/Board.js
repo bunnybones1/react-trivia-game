@@ -46,7 +46,7 @@ class Board extends Component {
     }
 
     selectedAns = (ans, e) => {
-        console.log('===>',ans);
+        // console.log('===>',ans);
         document.querySelectorAll('.answers h3').forEach(ans => ans.style.border="")
         e.target.style.border = "2px solid rgb(143, 84, 35)";
         this.setState({
@@ -57,7 +57,7 @@ class Board extends Component {
     componentDidMount() {
         axios.get(url)
             .then(res => {
-                console.log(res.data.results);
+                // console.log(res.data.results);
                 // to check the variable is array use this 'Object.prototype.toString.call(arrayVariable)', if 'arrayVariable' is array then the expression results the string '[object Array]'
                 if (Object.prototype.toString.call(res.data.results).slice(8, 13) === 'Array') {
                     this.setState({
@@ -67,21 +67,22 @@ class Board extends Component {
                 }
             })
             .catch((err) => {
-                console.log(err.message);
+                // console.log(err.message);
                 this.setState({
                     error: err.message,
                     isLoading: false
                 })
             });
-
-        this.updateQue();
+        
+        if(!this.state.isLoading && this.state.error === null)
+            this.updateQue();
     }
 
     render() {
         const { dataArr, isLoading, error, id, timer } = this.state;
 
         if(isLoading) {
-            console.log('Loading....')
+            // console.log('Loading....')
             return (
                 <div className="board">
                     <div className="content">
@@ -90,13 +91,15 @@ class Board extends Component {
                 </div>
             );
         } else {
-            var choices = dataArr[id].incorrect_answers.slice();
-            choices.push(dataArr[id].correct_answer);
-            choices.sort();
+            if(error === null){
+                var choices = dataArr[id].incorrect_answers.slice();
+                choices.push(dataArr[id].correct_answer);
+                choices.sort();
+            }
         }
 
         if(error !== null) {
-            console.log('erroorrrr:::=> ' + error);
+            // console.log('erroorrrr:::=> ' + error);
             return (
                 <div className="board">
                     <div className="content">

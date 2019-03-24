@@ -1,9 +1,9 @@
 .score {
-    margin: 50px auto;
     width: 600px;
     height: 130px;
-    padding: 15px 0;
     color: gray;
+    padding: 15px 0;
+    margin: 50px auto;
     border-radius: 5px;
     text-align: center;
     background-image: linear-gradient(150deg, rgb(90, 223, 216), rgb(64, 233, 177));

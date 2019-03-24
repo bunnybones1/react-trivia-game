@@ -12,7 +12,7 @@ class Home extends Component {
     this.setState({
       name: e.target.value
     }, () => {
-      console.log(this.state.name);
+      // console.log(this.state.name);
       // log the state variable value in callback fucntion of setState to get current value of the targeted input
     });
   };
@@ -20,7 +20,7 @@ class Home extends Component {
   handleKeyDown = (e) => {
     // either (e.which || e.keyCode) === 13 or e.key === 'Enter'
     if((e.which || e.keyCode) === 13){
-      console.log('KeyCode:' + e.keyCode + ' ' + e.key + ' is pressed');
+      // console.log('KeyCode:' + e.keyCode + ' ' + e.key + ' is pressed');
       history.push('/board', { playerName: `${this.state.name}` });
     }
   };
