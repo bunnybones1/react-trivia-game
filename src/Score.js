@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Score = () => <h2>SCORE</h2>;
+const Score = (props) => <h2>SCORE is {props.location.state.score}</h2>;
 
 export default Score;

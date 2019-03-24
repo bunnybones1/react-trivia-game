@@ -39,7 +39,7 @@ class Home extends Component {
               onChange={this.handleChange} 
               onKeyDown={this.handleKeyDown} 
             />
-          <p>Enter your name and Press <span id="key">Enter</span> key</p>
+          <p>Enter your NAME and Press <span id="key">Enter</span> key to start the Game</p>
         </div>
       </div>
     );

@@ -5,9 +5,16 @@
     padding-top: 300px;
 }
 
+.board1 {
+    width: 1320px;
+    height: 340px;
+    padding-bottom: 150px;
+}
+
 .content {
     width: 600px;
     padding: 5px;
+    font-size: 20px;
     margin-left: 350px;
     text-align: center;
     border-radius: 3px;
@@ -20,4 +27,51 @@
 
 #msg span {
     font-weight: bold;
+}
+
+.quesBoard {
+    width: 600px;
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: 350px;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+#ques, #ans1, #ans2, #ans3, #ans4 {
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 127, 54);
+    background: rgb(216, 127, 54);
+}
+
+#ques {
+    border: 2px solid rgb(21, 163, 104);
+    background: rgb(21, 163, 104);
+}
+
+.answers h3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user h2 span {
+    font-weight: bold;
+    color: rgb(21, 163, 104);
+}
+
+.user h1 {
+    padding: 5px;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(rgb(90, 223, 216), rgb(64, 233, 177));
+}
+
+.user h2, .user h1 {
+    display: inline-block;
+}
+
+.user {
+    padding: 0 20px;
 }
