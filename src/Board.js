@@ -63,6 +63,10 @@ class Board extends Component {
                     this.setState({
                         dataArr: res.data.results,
                         isLoading: false
+                    }, () => {
+                        // console.log(!this.state.isLoading && this.state.error === null)
+                        if(!this.state.isLoading && this.state.error === null)
+                            this.updateQue();
                     })
                 }
             })
@@ -72,10 +76,7 @@ class Board extends Component {
                     error: err.message,
                     isLoading: false
                 })
-            });
-        
-        if(!this.state.isLoading && this.state.error === null)
-            this.updateQue();
+            });       
     }
 
     render() {
