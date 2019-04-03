@@ -1,6 +1,6 @@
 # REACT TRIVIA GAME
 
-Download the project zip file and extract and go to this path react-drag-drop and open terminal and type following commands
+Download the project zip file and extract and go to this path react-trivia-game and open terminal and type following commands
 
 *1. To install dependencies* `npm install` *or* `npm i`
 
